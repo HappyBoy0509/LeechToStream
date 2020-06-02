@@ -37,7 +37,7 @@ async def help_message_f(client, message):
     channel_id = str(AUTH_CHANNEL)[4:]
     message_id = 99
     # display the /help message
-    await message.reply_text(
+    # await message.reply_text(
         f"No one gonna help you🤣🤣. Leech if you know!",
         quote=True
     )
