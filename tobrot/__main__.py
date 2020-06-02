@@ -54,19 +54,19 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leech@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purge@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdl@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
@@ -84,25 +84,25 @@ if __name__ == "__main__" :
     #
     exec_message_handler = MessageHandler(
         exec_message_f,
-        filters=Filters.command(["exec@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["exec@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(exec_message_handler)
     #
     rename_message_handler = MessageHandler(
         rename_message_f,
-        filters=Filters.command(["rename@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["rename@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(rename_message_handler)
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["help@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["help@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
@@ -125,13 +125,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnail@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnail@leachtorrentmoviesonlybot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail@MOleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
